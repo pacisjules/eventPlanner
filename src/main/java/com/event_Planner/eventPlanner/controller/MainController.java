@@ -62,17 +62,15 @@ public class MainController {
         return showimplementations.findcounts();
     }
 
-    //Welcoming the visitor
-    @GetMapping("welcome")
-    public String Hallo() {
-        String Message="<b>Working with Spring Data Repositories Developed by ISHIMWE JULES Pacis</b>";
-        return "<center>Message:  "+Message+"</center>";
-    }
 
-    //Print List in Java Spring
+    //Print List in Jav    //Welcoming the visitor
+    //    @GetMapping("welcome")
+    //    public String Hallo() {
+    //        String Message="<b>Working with Spring Data Repositories Developed by ISHIMWE JULES Pacis</b>";
+    //        return "<center>Message:  "+Message+"</center>";
+    //    }a Spring
     @GetMapping("/list")
     public List<String> mylist() {
-
         return  List.of("Amakuru","Amata", "Amahoro","Amafi");
     }
 }
